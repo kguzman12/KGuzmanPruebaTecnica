@@ -21,10 +21,15 @@ namespace PL
                     librosDL.Nombre = libro.Nombre();
                     librosDL.IdAutor = libro.IdAutor;
                     librosDL.NumeroPaginas = libro.NumeroPaginas;
+                    librosDL.FechaPublicacion = libro.FechaPublicacion;
+                    librosDL.IdEditorial = libro.IdEditorial;
+                    librosDL.Edicion = libro.Edicion;
+                    librosDL.Genero = libro.Genero;
 
                     context.Add(libroDL);
                     
                 }
+                result.Correct = true;
             }
             catch (Exception)
             {
